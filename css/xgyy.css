@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1a1a4c, #4d1a66);
+    background: linear-gradient(135deg, #2a0a5c, #752a96);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,18 +26,22 @@ body {
     animation: fadeInUp 1s ease;
     position: relative;
     padding: 40px 0;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
     width: 90%;
     max-width: 1200px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
 }
 
 .header h1 {
-    font-size: 56px;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    font-size: 64px;
+    text-shadow: 0 0 20px #ffd700;
     margin-bottom: 15px;
     color: #ffd700;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .header p {
@@ -72,6 +76,37 @@ body {
     color: #ffb900;
     text-shadow: 0 0 15px rgba(255, 185, 0, 0.8);
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* 返回主页按钮样式 */
+.back-home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 215, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    cursor: pointer;
+    animation: spin 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 0 0 5px #ffd700;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* 图片展示样式 */
@@ -208,27 +243,6 @@ body {
     padding: 30px 0;
     background: rgba(0, 0, 0, 0.4);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.social-links {
-    list-style: none;
-    margin-top: 15px;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.social-links li a img {
-    width: 35px;
-    height: 35px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.social-links li a:hover img {
-    filter: grayscale(0%);
 }
 
 /* 动画关键帧 */

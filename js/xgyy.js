@@ -21,7 +21,7 @@ quoteBtn.addEventListener('click', function () {
     // 点击按钮后添加星光闪烁特效
     for (let i = 0; i < 8; i++) {
         const star = document.createElement('div');
-        star.className ='star-effect';
+        star.className = 'star-effect';
         star.style.left = Math.random() * window.innerWidth + 'px';
         star.style.top = Math.random() * window.innerHeight + 'px';
         document.body.appendChild(star);
@@ -35,7 +35,7 @@ quoteBtn.addEventListener('click', function () {
 let trails = [];
 document.addEventListener('mousemove', function (e) {
     const trail = document.createElement('div');
-    trail.className ='meteor-trail';
+    trail.className = 'meteor-trail';
     trail.style.left = e.clientX + 'px';
     trail.style.top = e.clientY + 'px';
     document.body.appendChild(trail);
